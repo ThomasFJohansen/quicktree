@@ -259,7 +259,7 @@ struct DistanceMatrix *empty_DistanceMatrix( unsigned int size) {
 
   for( i=0; i < mat->size; i++) {
     mat->data[i] = (Distance *) malloc_util( (i+1) * sizeof(Distance) );
-    for( j=0; j < i; j++) 
+    for( j=0; j <= i; j++) 
       mat->data[i][j] = 0.0;
   }
  

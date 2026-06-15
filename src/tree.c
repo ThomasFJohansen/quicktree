@@ -306,7 +306,7 @@ struct Tree *get_root_Tnode( struct Tree *source ) {
 
   focal->left = children[focalleft];
   focal->right = children[focalright];
-  children[focalleft]->parent = children[focalright] = focal;
+  children[focalleft]->parent = children[focalright]->parent = focal;
 
   ret = empty_Tree();
   ret->child[0] = root;
